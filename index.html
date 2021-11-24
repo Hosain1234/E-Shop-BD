@@ -10,22 +10,30 @@
 </head>
 <body>
     <!-- here i am creating navbar -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                  <img src="asset/logo.png" alt="">
-              </a>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav d-flex justify-content-end">
-                  <a class="nav-link" href="#">Home</a>
-                  <a class="nav-link" href="#smartphone">SmartPhone</a>
-                  <a class="nav-link" href="#laptop">Laptop</a>
-                  <a class="nav-link" href="#contact">Contact</a>
-                </div>
-            </div>
-          </nav>
+    <div class="Navigation-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="asset/logo.png" alt="">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- here i am creating carousel -->
     <div class="container" id="carousel">
@@ -220,10 +228,36 @@
         </div>
       </div>
     </div>
-
-    <footer>
-      <small>©2021 Panda Commerce, All right reserved. Bogra, Bangladesh</small>
-    </footer>
+    <!-- footer part -->
+    <section class="footer">
+      <div class="container last">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="footer1">
+              <h6>Home</h6><br>
+              <p>Product</p>
+              <p>Service</p>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="footer2">
+              <h6>Product</h6><br>
+              <p>SmartPhones</p>
+              <p>Laptop</p>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="footer3">
+              <p>Stay connected with us</p><br>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Enter your gmail here" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Submit</button>
+              </form>        
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
